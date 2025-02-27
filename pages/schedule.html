@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ploes25 - Copysite</title>
+    <link rel="stylesheet" href="./schedule.css">
+</head>
+
+<body>
+    <!-- 네비게이션 바 -->
+    <header class="header">
+        <div class="inner">
+            <div id="navLogo">
+                <a href="/index.html">
+                    <img src="../img/logo.png" alt="Pleos 25">
+                </a>
+            </div>
+            </section>
+            <!-- 네비게이션 메뉴 -->
+            <nav class="nav" id="navMenu">
+                <button class="hamburger" id="hamburger">
+                    ☰
+                </button>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="schedule.html">Schedule</a></li>
+                    <li><a href="exhibition.html">Exhibition</a></li>
+                    <li><a href="hands-on.html">Hands-on</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="login-container">
+                    <img src="../img/login.png" alt="Login" class="login-icon" id="loginBtn">
+                </div>
+            </nav>
+        </div>
+        <div class="sidebar-menu" id="sidebarMenu">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="exhibition.html">Exhibition</a></li>
+                <li><a href="hands-on.html">Hands-on</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 여기서부터 내용 -->
+    <div class="sub-banner">
+        <h2>Schedule</h2>
+    </div>
+    <div class="schedule-container">
+        <!--  상단 탭버튼 키노트or트랙 -->
+        <div class="schedule-tabs">
+            <button class="tab-btn active" data-tab="keynote">Keynote</button>
+            <button class="tab-btn" data-tab="track">Track</button>
+        </div>
+
+        <!-- 키노트 섹션 -->
+        <div class="schedule-section" id="keynote">
+            <h2>Keynote session을 통해 Pleos와 함께 <br>모빌리티 생태계를 만들어가는 소프트웨어 전략을 확인해 보세요.</h2>
+            <p class="sub-text">* 키노트는 오디토리움에서 진행됩니다.</p>
+            <p class="sub-text">* 한정된 공간으로 인해 선착순 입장 마감하며, 전시홀 D에서도 시청이 가능합니다.</p>
+
+            <!--  키노트 스케줄 -->
+            <div class="schedule-item">
+                <div class="time-box">
+                    <p>09:00</p>
+                </div>
+                <div class="amdetail-box">
+                    <p class="time-range">09:00 - 10:00</p>
+                    <h3>참가 등록</h3>
+                </div>
+            </div>
+
+            <div class="schedule-item">
+                <div class="time-box">
+                    <p>10:00</p>
+                </div>
+                <div class="amdetail-box">
+                    <p class="label keynote">Keynote</p>
+                    <p class="time-range">10:00 - 11:00</p>
+                    <h3>Pleos 25 기조연설</h3>
+                    <p class="speaker">송창현 사장 (현대차 · 기아 / 42dot)</p>
+                </div>
+            </div>
+
+            <div class="schedule-item">
+                <div class="time-box">
+                    <p>11:00</p>
+                </div>
+                <div class="amdetail-box">
+                    <p class="label keynote">Keynote</p>
+                    <p class="time-range">11:00 - 12:00</p>
+                    <h3>Coming Soon</h3>
+                </div>
+            </div>
+        </div>
+
+        <!--  트랙 섹션 -->
+        <div class="schedule-section" id="track" style="display: none;">
+            <h2>Track session을 통해 Pleos 개발자들의 <br>기술과 경험, 노하우를 확인해 보세요.</h2>
+            <p class="sub-text">* Track A: 인포테인먼트 앱 개발 환경 및 도구</p>
+            <p class="sub-text">* Track B: 소프트웨어 중심 차량의 전자 전기 구조 및 운영 체계 기술</p>
+            <p class="sub-text">* Track C: 자율주행, Mobility ecosystem 및 Transportation solution</p>
+
+
+            </div>
+
+        <!-- 13:30 일정 -->
+<div class="schedule-item">
+    <div class="time-box">
+        <p>13:30</p>
+    </div>
+    <div class="track-container">
+        <div class="detail-box">
+            <p class="label track-a">Track A</p>
+            <p class="time-range">13:30 - 14:00</p>
+            <h3>더 많은 데이터, 더 강력한 제어: Vehicle, Location</h3>
+            <p class="speaker">Tao Liang (42dot)</p>
+        </div>
+        <div class="detail-box">
+            <p class="label track-a">Track B</p>
+            <p class="time-range">13:30 - 14:00</p>
+            <h3>차세대 차량 소프트웨어 플랫폼 : SDV OS</h3>
+            <p class="speaker">정원국 (42dot)</p>
+        </div>
+        <div class="detail-box">
+            <p class="label track-a">Track C</p>
+            <p class="time-range">13:30 - 14:00</p>
+            <h3>데이터로 보는 위협운전의 순간: 감지,수집,분석,개선</h3>
+            <p class="speaker">임상석 (42dot)</p>
+        </div>
+    </div>
+</div>
+
+<!-- 14:00 일정 -->
+<div class="schedule-item">
+    <div class="time-box">
+        <p>14:00</p>
+    </div>
+    <div class="track-container">
+        <div class="detail-box">
+            <p class="label track-a">Track A</p>
+            <p class="time-range">14:00 - 14:30</p>
+            <h3>차량과 Cloud 간 동기화를 위한 더 나은 제안: Vehicle Sync SDK</h3>
+            <p class="speaker">김현결 (42dot)</p>
+        </div>
+        <div class="detail-box">
+            <p class="label track-a">Track B</p>
+            <p class="time-range">14:00 - 14:30</p>
+            <h3>SDV 전환의 열쇠: 차세대 E/E 아키텍처</h3>
+            <p class="speaker">최운범, 박광현 (현대차 · 기아, 42dot)</p>
+        </div>
+        <div class="detail-box">
+            <p class="label track-a">Track C</p>
+            <p class="time-range">14:00 - 14:30</p>
+            <h3>차량 데이터로 만드는 보험 혁신: UBI의 확장과 미래</h3>
+            <p class="speaker">이태규 (42dot)</p>
+        </div>
+    </div>
+</div>
+
+<!-- 14:30 일정 -->
+<div class="schedule-item">
+    <div class="time-box">
+        <p>14:30</p>
+    </div>
+    <div class="track-container">
+        <div class="detail-box">
+            <p class="label track-a">Track A</p>
+            <p class="time-range">14:30 - 15:00</p>
+            <h3>Persistent store로 차량 데이터 일관성 및 안정성 확보하기</h3>
+            <p class="speaker">Tao Liang (42dot)</p>
+        </div>
+        <div class="detail-box">
+            <p class="label track-a">Track B</p>
+            <p class="time-range">14:30 - 15:00</p>
+            <h3>SDV OS의 fault tolerance 아키텍처: 컨테이너와 S/W redundancy 전략</h3>
+            <p class="speaker">심민수, 김현준 (42dot)</p>
+        </div>
+        <div class="detail-box">
+            <p class="label track-a">Track C</p>
+            <p class="time-range">14:30 - 15:00</p>
+            <h3>실도로 주행을 위한 End-to-end 자율주행 모델 길들이기</h3>
+            <p class="speaker">정성득 (42dot)</p>
+        </div>
+    </div>
+</div>
+
+    
+        </div>
+    </div>
+
+    <!-- 푸터 -->
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../img/logo.png" alt="Pleos 25">
+            </div>
+
+            <!-- 하단 정보 -->
+            <div class="footer-info">
+                <p><a href="#">서비스 이용약관</a> | <a href="#">개인정보처리방침</a> | 운영사무국 <a
+                        href="mailto:pleos.help@hyundai.com">pleos.help@hyundai.com</a></p>
+                <br>
+                <p>© Hyundai Motor Group. All rights reserved.(X)<br>🫡이 페이지는 교육용으로 제작하였습니다.(O)</p>
+            </div>
+
+            <!-- Developer Sites 버튼 -->
+            <div class="developer-sites" id="developerSites">
+                <p>Developer Sites</p>
+                <span class="icon-plus" id="toggleIcon">+</span>
+                <div class="dropdown-menu" id="dropdownMenu">
+                    <ul>
+                        <li><a href="https://developers.hyundaimotorgroup.com/">HMG Developers</a></li>
+                        <li><a href="https://devcon.hyundaimotorgroup.com/2021">HMG Developer Conference 2021</a></li>
+                        <li><a href="https://devcon.hyundaimotorgroup.com/2022">HMG Developer Conference 2022</a></li>
+                        <li><a href="#https://devcon.hyundaimotorgroup.com/2023">HMG Developer Conference 2023</a></li>
+                        <li><a href="https://softeer.ai/">Softeer</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 스크롤 위로 가기 버튼 -->
+            <button class="scroll-top" id="scrollTop">
+                <span class="arrow-up">⌃</span>
+            </button>
+        </div>
+    </footer>
+
+    <script>
+          //login
+          document.addEventListener("DOMContentLoaded", function () {
+            const loginBtn = document.getElementById("loginBtn");
+            loginBtn.addEventListener("click", function () {
+                alert("서비스 기간이 아닙니다.");
+            });
+        });
+        // 햄버거 메뉴
+        document.addEventListener("DOMContentLoaded", function () {
+            const hamburger = document.getElementById("hamburger");
+            const sidebarMenu = document.getElementById("sidebarMenu");
+
+            hamburger.addEventListener("click", function () {
+                sidebarMenu.classList.toggle("active");
+            });
+
+            hamburger.addEventListener("mouseenter", function () {
+                sidebarMenu.classList.add("active");
+            });
+
+            sidebarMenu.addEventListener("mouseenter", function () {
+                sidebarMenu.classList.add("active");
+            });
+
+            sidebarMenu.addEventListener("mouseleave", function () {
+                sidebarMenu.classList.remove("active");
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!sidebarMenu.contains(event.target) && !hamburger.contains(event.target)) {
+                    sidebarMenu.classList.remove("active");
+                }
+            });
+        });
+
+        // 탭 메뉴 기능
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".tab-btn");
+            const sections = document.querySelectorAll(".schedule-section");
+
+            tabs.forEach(tab => {
+                tab.addEventListener("click", function () {
+                    tabs.forEach(t => t.classList.remove("active"));
+                    sections.forEach(sec => sec.style.display = "none");
+
+                    this.classList.add("active");
+                    document.getElementById(this.dataset.tab).style.display = "block";
+                });
+            });
+        });
+
+        // 탑스크롤
+        document.addEventListener("DOMContentLoaded", function () {
+            const scrollTopBtn = document.getElementById("scrollTop");
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > 200) {
+                    scrollTopBtn.classList.add("show");
+                } else {
+                    scrollTopBtn.classList.remove("show");
+                }
+            });
+
+            scrollTopBtn.addEventListener("click", function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+
+        // 푸터 중 연관사이트 토글, + or - 버튼 상태 텍스트 
+        document.addEventListener("DOMContentLoaded", function () {
+            const developerSites = document.getElementById("developerSites");
+            const dropdownMenu = document.getElementById("dropdownMenu");
+            const toggleIcon = document.getElementById("toggleIcon");
+
+            developerSites.addEventListener("click", function () {
+                this.classList.toggle("active");
+
+                if (this.classList.contains("active")) {
+                    toggleIcon.textContent = "-";
+                } else {
+                    toggleIcon.textContent = "+";
+                }
+            });
+
+            // 메뉴외부 클릭 시 닫기
+            document.addEventListener("click", function (event) {
+                if (!developerSites.contains(event.target)) {
+                    developerSites.classList.remove("active");
+                    toggleIcon.textContent = "+";
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
