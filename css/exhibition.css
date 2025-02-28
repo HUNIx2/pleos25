@@ -28,21 +28,22 @@ body {
     align-items: center;
     z-index: 1000;
 }
+
 .login-container {
     position: absolute;
-    right: 0; 
+    right: 0;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .login-icon {
-    width: 22px; 
+    width: 22px;
     height: auto;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 .login-icon:hover {
-    opacity: 0.7; 
+    opacity: 0.7;
 }
 
 .inner {
@@ -113,7 +114,7 @@ body {
 .sidebar-menu {
     position: fixed;
     top: 0;
-    left: -250px; 
+    left: -250px;
     width: 250px;
     height: 100vh;
     background: rgba(0, 0, 0, 0.9);
@@ -181,7 +182,7 @@ body {
     justify-content: center;
     padding: 40px;
     position: relative;
-    border-radius: 20px; 
+    border-radius: 20px;
     text-align: center;
     background-color: none;
 }
@@ -206,7 +207,7 @@ body {
 
 .footer-info {
     position: absolute;
-    bottom : -140px;
+    bottom: -140px;
     left: 150px;
     transform: translateX(-50%);
     color: #fff;
@@ -280,7 +281,7 @@ body {
 
 .dropdown-menu {
     position: absolute;
-    bottom: 40px; 
+    bottom: 40px;
     left: 0;
     width: 250px;
     background: black;
@@ -309,8 +310,8 @@ body {
 }
 
 .dropdown-menu li a {
-    text-decoration: none ;
-    color: #fff ;
+    text-decoration: none;
+    color: #fff;
 }
 
 .dropdown-menu li:hover {
@@ -339,7 +340,8 @@ body {
     background-size: cover;
     background-position: center;
 }
-.sub-banner h2{
+
+.sub-banner h2 {
     display: flex;
     font-size: 3.5rem;
     color: #fff;
@@ -347,96 +349,76 @@ body {
     margin-left: 50px;
 }
 
-.content-wrapper{
-  width: 100%;
-  height: auto;
-  background-color: #e7e7e7;
+.content-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #e7e7e7;
 
 }
-#exhibition{
+
+#exhibition {
     width: 95%;
     border-radius: 15px;
     margin: 50px auto;
 }
+
 .exhibition-container {
     width: 100%;
     padding: 40px 0;
-    background:none;
+    background: none;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.schedule-item {
-    display: flex;
-    align-items: stretch;
-    width: 90%;
-    max-width: 1100px;
-}
-
-.time-column {
-    background: black;
-    color: white;
-    padding: 40px;
-    width: 220px;
-    text-align: center;
-    border-radius: 16px 0 0 16px;
-    font-weight: bold;
+.exhibition-container {
     font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+    color: black;
 }
 
-/* Exhibition 내용 전체 박스 (오른쪽) */
-.exhibition-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
+.exhibition-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3개씩 나열 */
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
 }
 
 .exhibition-item {
-    display: flex;
-    align-items: center;
     background: white;
     padding: 20px;
-    border-radius: 0 16px 16px 0;
+    height: auto;
+    border-radius: 12px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    justify-content: space-between;
-}
-
-.exhibition-tag {
-    background-color: #2350ff;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 14px;
-    letter-spacing: -0.01em;
-    line-height: 1.47;
-    min-width: 100px;
-    padding: 6px 12px;
-    text-align: center;
-    flex-shrink: 0;
-}
-
-.item-title {
-    font-size: 17px;
-    color: black;
-    line-height: 1.6;
-    max-width: 555px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-grow: 1;
     text-align: left;
-    padding-left: 15px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.status {
-    font-size: 14px;
-    color: #c8c8c8;
+.exhibition-item:hover {
+    transform: translateY(-5px);
+}
+
+.label {
+    display: inline-block;
+    font-size: 0.8rem;
     font-weight: bold;
-    flex-shrink: 0;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.ai-lm {
+    background-color: black;
+}
+
+.ad-challenge {
+    background-color: #FF5910;
+}
+
+.smart-city {
+    background-color: #3CB371;
 }
 
 
@@ -467,7 +449,7 @@ body {
         width: 50%;
         align-self: center;
         justify-content: center;
-        
+
     }
 
     .top-contents p {
@@ -489,7 +471,7 @@ body {
 
     .middle-contents h2 {
         margin-bottom: 20px;
-    
+
     }
 
     .top-contents h2 {
@@ -500,9 +482,9 @@ body {
     .programs-contents {
         height: auto;
         padding: 0;
-        flex-direction: column; 
+        flex-direction: column;
         align-self: start;
-       
+
     }
 
     .program-item {
@@ -516,65 +498,32 @@ body {
         text-align: center;
     }
 
-    .box_map,
-    .box_info {
-        width: 90%;
-        max-width: 100%;
-        text-align: center;
-    }
 
     .icon_arrow {
         font-size: 16px;
     }
 
-    .info_item {
-        justify-content: center;/
-    }
-
-    .box_map h2 {
-        text-align: left;
-    }
-
-    .map_buttons {
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .map_buttons a {
-        width: 40%;
-        font-size: 15px;
-        padding: 10px 20px;
-    }
-    .info_item {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; 
-        justify-content: flex-start;
-        text-align: left;
-    }
-    .info_title, .info_desc {
-        font-size: 14px;
-        text-align: left;
-        padding-left: 20px;
-        display: block; 
-    }
     .developer-sites {
         width: 120px;
         padding: 10px;
     }
+
     .footer-info {
         width: 120px;
-        bottom : -140px;
+        bottom: -140px;
         left: 30px;
         transform: translateX(-50%);
         color: #fff;
         font-size: 14px;
         text-align: left;
     }
+
     .footer-logo img {
         width: 200px;
     }
-    .footer-info a, p {
+
+    .footer-info a,
+    p {
         color: #fff;
         font-size: 15px;
         text-decoration: none;
@@ -582,32 +531,4 @@ body {
         text-align: left;
     }
 
-    .schedule-item {
-        flex-direction: column;
-    }
-
-    .time-column {
-        width: 100%;
-        border-radius: 16px 16px 0 0;
-        padding: 20px;
-    }
-
-    .exhibition-item {
-        border-radius: 0 0 16px 16px;
-        flex-direction: row;
-        align-items: center;
-        padding: 16px;
-    }
-
-    .item-title {
-        font-size: 16px;
-        max-width: 100%;
-        margin: 0;
-        text-align: left;
-    }
-
-    .status {
-        font-size: 13px;
-        text-align: right;
-    }
 }
