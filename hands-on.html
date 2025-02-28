@@ -6,11 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ploes25 - Copysite</title>
     <link rel="stylesheet" href="css/hands-on.css">
-    <script>
-        if (window.location.hostname.includes("github.io")) {
-            document.write('<base href="/pleos25/">');
-        }
-    </script>
+    <base href="/pleos25/">
 </head>
 
 <body>
@@ -95,31 +91,7 @@
         </div>
     </footer>
 
-
-    <script>
-        if (window.location.hostname.includes("github.io")) {
-            document.write('<base href="/pleos25/">');
-        }
-    </script>
-      <script>
-        if (window.location.hostname.includes("github.io")) {
-            document.querySelectorAll("link[rel='stylesheet']").forEach(link => {
-                link.href = "/pleos25" + link.getAttribute("href");
-            });
-            document.querySelectorAll("script").forEach(script => {
-                if (script.getAttribute("src")) {
-                    script.src = "/pleos25" + script.getAttribute("src");
-                }
-            });
-            document.querySelectorAll("img").forEach(img => {
-                img.src = "/pleos25" + img.getAttribute("src");
-            });
-            document.querySelectorAll("video source").forEach(video => {
-                video.src = "/pleos25" + video.getAttribute("src");
-            });
-        }
-    </script>
-    <script src="script/hands-on.js"></script>
+    <script src="script/hands-on.js" defer></script>
 </body>
 
 </html>
