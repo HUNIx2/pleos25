@@ -369,6 +369,7 @@ body {
     font-size: 2.2rem;
     color: black;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .schedule-item {
@@ -476,27 +477,9 @@ body {
         margin-top: 10px;
     }
 
-    .middle-contents h2 {
-        margin-bottom: 20px;
-    
-    }
-
-    .top-contents h2 {
-        font-size: 2.2rem;
-    }
-
-
-    .programs-contents {
-        height: auto;
-        padding: 0;
-        flex-direction: column; 
-        align-self: start;
-       
-    }
-
-    .program-item {
-        width: 100%;
-
+    .hands-on-container h2{
+        font-size: 1.5rem;
+        margin-bottom: 30px;
     }
 
     .icon_arrow {

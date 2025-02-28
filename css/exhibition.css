@@ -375,6 +375,7 @@ body {
     font-size: 2.2rem;
     color: black;
     margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .exhibition-grid {
@@ -478,38 +479,10 @@ body {
         margin-top: 10px;
     }
 
-    .middle-contents h2 {
-        margin-bottom: 20px;
 
-    }
-
-    .top-contents h2 {
-        font-size: 2.2rem;
-    }
-
-
-    .programs-contents {
-        height: auto;
-        padding: 0;
-        flex-direction: column;
-        align-self: start;
-
-    }
-
-    .program-item {
-        width: 100%;
-
-    }
-
-    .bottom-contents {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-
-    .icon_arrow {
-        font-size: 16px;
+    .exhibition-container h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
     }
 
     .developer-sites {
@@ -531,8 +504,7 @@ body {
         width: 200px;
     }
 
-    .footer-info a,
-    p {
+    .footer-info a,p {
         color: #fff;
         font-size: 15px;
         text-decoration: none;
