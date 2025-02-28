@@ -323,19 +323,19 @@ button:hover {
     color: inherit;
 }
 .item1 {
-    background-image: url('/img/p1.png');
+    background-image: url('img/p1.png');
 }
 
 .item2 {
-    background-image: url('/img/p2.png');
+    background-image: url('img/p2.png');
 }
 
 .item3 {
-    background-image: url('/img/p4.png');
+    background-image: url('img/p4.png');
 }
 
 .item4 {
-    background-image: url('/img/p3.png');
+    background-image: url('img/p3.png');
 }
 
 .program-item h3 {
@@ -456,7 +456,7 @@ button:hover {
     height: auto;
     min-height: 400px;
     margin-bottom: 30px;
-    background: url('/img/footerbg.png') center/cover no-repeat;
+    background: url('img/footerbg.png') center/cover no-repeat;
     display: inline-flex;
     align-items: center;
     justify-content: center;
