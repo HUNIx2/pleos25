@@ -9,7 +9,7 @@
 body {
     font-family: 'HyundaiSans-Text-Pro-Bold', sans-serif;
     background-color: white;
-    color: #FFFFFF;
+    color: #fff;
     text-align: center;
 
 }
@@ -43,7 +43,6 @@ body {
 .login-icon:hover {
     opacity: 0.7; 
 }
-
 .inner {
     width: 100%;
     max-width: 1600px;
@@ -64,6 +63,7 @@ body {
     height: auto;
 }
 
+
 #navTitle {
     position: absolute;
     left: 50%;
@@ -73,6 +73,7 @@ body {
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
+
 
 .nav ul {
     list-style: none;
@@ -90,6 +91,7 @@ body {
 .nav ul li a:hover {
     color: #aaa;
 }
+
 
 .hamburger {
     display: none;
@@ -139,13 +141,16 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
+
 .sub-menu {
     padding-left: 30px;
 }
 
+
 .sidebar-menu.active {
     left: 0;
 }
+
 
 .scrolled .header {
     top: 0;
@@ -160,13 +165,14 @@ body {
     opacity: 1;
 }
 
+
 /* 푸터 */
 .footer-container {
     width: 80%;
     height: auto;
     min-height: 400px;
     margin-bottom: 30px;
-    background: url('../img/footerbg.png') center/cover no-repeat;
+    background: url('/img/footerbg.png') center/cover no-repeat;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -309,6 +315,7 @@ body {
     cursor: pointer;
 }
 
+
 .developer-sites.active .icon-plus {
     transform: rotate(180deg);
 }
@@ -337,138 +344,20 @@ body {
     margin-left: 50px;
 }
 
-.schedule-container {
-    width: 100%;
-    margin: auto;
-    padding: 40px 0;
-    background: #f5f5f5; 
+.content-wrapper{
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
-.schedule-tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    gap: 10px;
+#handson{
+    width: 80%;
+    max-width: 600px;
+    margin: 60px auto;
+    border-radius: 15px;
 }
 
-.tab-btn {
-    background: #ddd;
-    padding: 10px 20px;
-    border: none;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
-.tab-btn.active {
-    background: black;
-    color: white;
-}
-
-.schedule-section {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-.schedule-section h2 {
-   color: black
-}
-
-.sub-text {
-    font-size: 0.9rem;
-    color: #777;
-    opacity: 1;
-    margin-top: 10px;
-}
-.schedule-item {
-    display: flex;
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    align-items: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    justify-content: start;
-    margin-top: 10px;
-}
-
-.schedule-item h3{
-   color: black;
-   font-size: 1rem;
-}
-
-.time-box {
-    background: black;
-    color: white;
-    padding: 15px;
-    width: 80px;
-    margin-right: 10px;
-    text-align: center;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 1rem;
-    flex-shrink: 0;
-}
-.track-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    width: 100%;
-    margin-top: 10px;
-}
-.amdetail-box {
-    background: white;
-    width: 40%;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.detail-box {
-    background: white;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-p.time-range {
-    font-size: 1rem;
-    color: #555;
-    font-weight: bold;
-}
-
-.label {
-    font-size: 0.9rem;
-    font-weight: bold;
-    padding: 6px 12px;
-    border-radius: 5px;
-    color: white;
-    display: inline-block;
-    margin-bottom: 10px;
-}
-
-.keynote {
-    background-color: black;
-}
-
-.track-a {
-    background-color: #E50914;
-}
-
-p.speaker {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 5px;
-}
 
 @media screen and (max-width: 1024px) {
     .hamburger {
@@ -524,6 +413,7 @@ p.speaker {
     .top-contents h2 {
         font-size: 2.2rem;
     }
+
 
     .programs-contents {
         height: auto;
@@ -608,8 +498,5 @@ p.speaker {
         text-decoration: none;
         margin: 0 5px;
         text-align: left;
-    }
-    .track-container {
-        grid-template-columns: repeat(1, 1fr);
     }
 }

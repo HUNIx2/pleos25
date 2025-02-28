@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ploes25 - Copysite</title>
-    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <base href="/">
+    <script src="/script/about.js"></script>
 </head>
 
 <body>
@@ -14,7 +16,7 @@
         <div class="inner">
             <div id="navLogo">
                 <a href="/index.html">
-                    <img src="../img/logo.png" alt="Pleos 25">
+                    <img src="/img/logo.png" alt="Pleos 25">
                 </a>
             </div>
             </section>
@@ -24,25 +26,25 @@
                     ☰
                 </button>
                 <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="schedule.html">Schedule</a></li>
-                    <li><a href="exhibition.html">Exhibition</a></li>
-                    <li><a href="hands-on.html">Hands-on</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/schedule.html">Schedule</a></li>
+                    <li><a href="/exhibition.html">Exhibition</a></li>
+                    <li><a href="/hands-on.html">Hands-on</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
                 </ul>
             </nav>
             <div class="login-container">
-                <img src="../img/login.png" alt="Login" class="login-icon" id="loginBtn">
+                <img src="/img/login.png" alt="Login" class="login-icon" id="loginBtn">
             </div>
         </div>
         <div class="sidebar-menu" id="sidebarMenu">
             <ul>
                 <li><a href="/index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="exhibition.html">Exhibition</a></li>
-                <li><a href="hands-on.html">Hands-on</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/schedule.html">Schedule</a></li>
+                <li><a href="/exhibition.html">Exhibition</a></li>
+                <li><a href="/hands-on.htmlhands-on.html">Hands-on</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
             </ul>
         </div>
     </header>
@@ -86,7 +88,7 @@
                 여러분의 아이디어와 잠재력을 만났을 때 얼마나 큰 변화를 만들어 낼 수 있을까요?<br>
                 'Pleos 25'에서 여러분의 상상을 현실로 만들어보세요.
             </p>
-            <img src="../img/commingsoon.png" alt="Commig Soon" id="cmnsoon">
+            <img src="/img/commingsoon.png" alt="Commig Soon" id="cmnsoon">
         </section>
 
     </section>
@@ -94,7 +96,7 @@
     <footer class="footer-container">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="../img/logo.png" alt="Pleos 25">
+                <img src="/img/logo.png" alt="Pleos 25">
             </div>
 
             <!-- 하단 정보 -->
@@ -129,86 +131,11 @@
 
 
     <script>
-        //login
-        document.addEventListener("DOMContentLoaded", function () {
-            const loginBtn = document.getElementById("loginBtn");
-            loginBtn.addEventListener("click", function () {
-                alert("서비스 기간이 아닙니다.");
-            });
-        });
-        // 햄버거 메뉴
-        document.addEventListener("DOMContentLoaded", function () {
-            const hamburger = document.getElementById("hamburger");
-            const sidebarMenu = document.getElementById("sidebarMenu");
-
-            hamburger.addEventListener("click", function () {
-                sidebarMenu.classList.toggle("active");
-            });
-
-            hamburger.addEventListener("mouseenter", function () {
-                sidebarMenu.classList.add("active");
-            });
-
-            sidebarMenu.addEventListener("mouseenter", function () {
-                sidebarMenu.classList.add("active");
-            });
-
-            sidebarMenu.addEventListener("mouseleave", function () {
-                sidebarMenu.classList.remove("active");
-            });
-
-            document.addEventListener("click", function (event) {
-                if (!sidebarMenu.contains(event.target) && !hamburger.contains(event.target)) {
-                    sidebarMenu.classList.remove("active");
-                }
-            });
-        });
-
-
-        // 탑스크롤
-        document.addEventListener("DOMContentLoaded", function () {
-            const scrollTopBtn = document.getElementById("scrollTop");
-
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 200) {
-                    scrollTopBtn.classList.add("show");
-                } else {
-                    scrollTopBtn.classList.remove("show");
-                }
-            });
-
-            scrollTopBtn.addEventListener("click", function () {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
-            });
-        });
-
-        // 푸터 중 연관사이트 토글, + or - 버튼 상태 텍스트 
-        document.addEventListener("DOMContentLoaded", function () {
-            const developerSites = document.getElementById("developerSites");
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            const toggleIcon = document.getElementById("toggleIcon");
-
-            developerSites.addEventListener("click", function () {
-                this.classList.toggle("active");
-
-                if (this.classList.contains("active")) {
-                    toggleIcon.textContent = "-";
-                } else {
-                    toggleIcon.textContent = "+";
-                }
-            });
-
-            // 메뉴외부 클릭 시 닫기
-            document.addEventListener("click", function (event) {
-                if (!developerSites.contains(event.target)) {
-                    developerSites.classList.remove("active");
-                    toggleIcon.textContent = "+";
-                }
-            });
-        });
+        //git 경로유지
+        if (window.location.hostname.includes("github.io")) {
+            document.write('<base href="/pleos25/">');
+        }
+       
     </script>
 </body>
 

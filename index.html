@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ploes25 - Copysite</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <base href="/">
+    <script src="/script/index.js"></script>
 </head>
 
 <body>
     <!-- 메인 로고 섹션 -->
     <section class="main-logobox">
-        <img src="./img/logo.png" id="mainTitle" alt="Pleos 25">
+        <img src="/img/logo.png" id="mainTitle" alt="Pleos 25">
     </section>
 
     <!-- 네비게이션 바 -->
@@ -20,7 +22,7 @@
 
             <!-- 배경 비디오 -->
             <video autoplay loop muted playsinline class="bg-video">
-                <source src="./mp4/opening2.mp4" type="video/mp4">
+                <source src="/mp4/opening2.mp4" type="video/mp4">
             </video>
 
             <div id="navLogo">
@@ -37,25 +39,25 @@
                 </button>
                 <ul>
                     
-                    <li><a href="/pages/about.html">About</a></li>
-                    <li><a href="/pages/schedule.html">Schedule</a></li>
-                    <li><a href="/pages/exhibition.html">Exhibition</a></li>
-                    <li><a href="/pages/hands-on.html">Hands-on</a></li>
-                    <li><a href="/pages/faq.html">FAQ</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/schedule.html">Schedule</a></li>
+                    <li><a href="/exhibition.html">Exhibition</a></li>
+                    <li><a href="/hands-on.html">Hands-on</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
                 </ul>
             </nav>
             <div class="login-container">
-                <img src="../img/login.png" alt="Login" class="login-icon" id="loginBtn">
+                <img src="/img/login.png" alt="Login" class="login-icon" id="loginBtn">
             </div>
         </div>
         <div class="sidebar-menu" id="sidebarMenu">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="/pages/about.html">About</a></li>
-                <li><a href="/pages/schedule.html">Schedule</a></li>
-                <li><a href="/pages/exhibition.html">Exhibition</a></li>
-                <li><a href="/pages/hands-on.html">Hands-on</a></li>
-                <li><a href="/pages/faq.html">FAQ</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/schedule.html">Schedule</a></li>
+                <li><a href="/exhibition.html">Exhibition</a></li>
+                <li><a href="/hands-on.html">Hands-on</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
             </ul>
         </div>
     </header>
@@ -88,7 +90,7 @@
         <div class="programs-contents">
 
             <div class="program-item item1">
-                <a href="./pages/schedule.html">
+                <a href="/schedule.html">
                     <h3>Keynote</h3>
                     <p>현대자동차그룹이 그리는 미래 모빌리티 생태계와 함께.<br>
                         새로운 소프트웨어 브랜드 'Pleos'를 공개합니다.</p>
@@ -97,7 +99,7 @@
 
 
             <div class="program-item item2">
-                <a href="./pages/schedule.html">
+                <a href="/schedule.html">
                     <h3>Track</h3>
                     <p>SDV, AI, 자율주행 등 다양한 분야의 개발자들의<br>
                         생생한 개발 경험과 인사이트를 공유합니다.</p>
@@ -106,7 +108,7 @@
 
 
             <div class="program-item item3">
-                <a href="./pages/exhibition.html">
+                <a href="/exhibition.html">
                     <h3>Exhibition</h3>
                     <p>현대자동차그룹과 파트너사의 모빌리티 협업 사례부터<br>
                         차량 소프트웨어 기술과 솔루션까지, 다양한 전시가 준비되어 있습니다.</p>
@@ -115,7 +117,7 @@
 
 
             <div class="program-item item4">
-                <a href="./pages/hands-on.html">
+                <a href="/hands-on.html">
                     <h3>Hands-on</h3>
                     <p>Pleos 개발자들과 함께 차량용 앱개발 및<br>
                         SDK 활용 방법에 대해 직접 체험해 볼 수 있습니다.</p>
@@ -128,7 +130,7 @@
         <!-- 왼쪽 지도 -->
         <div class="box_map">
             <h2>COEX Convention</h2>
-            <img src="./img/map.jpg" alt="오시는길">
+            <img src="/img/map.jpg" alt="오시는길">
         </div>
 
         <!-- 오른쪽 텍스트 정보 -->
@@ -163,7 +165,7 @@
         <div class="footer-content">
             <!-- Pleos 25 로고 -->
             <div class="footer-logo">
-                <img src="./img/logo.png" alt="Pleos 25">
+                <img src="/img/logo.png" alt="Pleos 25">
             </div>
 
             <!-- 하단 정보 -->
@@ -198,121 +200,10 @@
 
 
     <script>
-        // 영상 viewport가 적당한 스크롤값이 오면 안보이게
-        window.addEventListener("scroll", function () {
-            const video = document.querySelector(".bg-video");
-            const scrollY = window.scrollY;
-            const viewportHeight = window.innerHeight;
-
-            if (scrollY > viewportHeight * 2.2) {
-                video.style.opacity = "0";
-                video.style.visibility = "hidden";
-            } else {
-                video.style.opacity = "1";
-                video.style.visibility = "visible";
-            }
-        });
-
-        // 맨위 nav가 스크롤 60하면 내려오게
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 60) {
-                document.body.classList.add('scrolled');
-            } else {
-                document.body.classList.remove('scrolled');
-            }
-        });
-          //login
-          document.addEventListener("DOMContentLoaded", function () {
-            const loginBtn = document.getElementById("loginBtn");
-            loginBtn.addEventListener("click", function () {
-                alert("서비스 기간이 아닙니다.");
-            });
-        });
-
-        // 햄버거 메뉴
-        document.addEventListener("DOMContentLoaded", function () {
-            const hamburger = document.getElementById("hamburger");
-            const sidebarMenu = document.getElementById("sidebarMenu");
-
-            hamburger.addEventListener("click", function () {
-                sidebarMenu.classList.toggle("active");
-            });
-
-            hamburger.addEventListener("mouseenter", function () {
-                sidebarMenu.classList.add("active");
-            });
-
-            sidebarMenu.addEventListener("mouseenter", function () {
-                sidebarMenu.classList.add("active");
-            });
-
-            sidebarMenu.addEventListener("mouseleave", function () {
-                sidebarMenu.classList.remove("active");
-            });
-
-            document.addEventListener("click", function (event) {
-                if (!sidebarMenu.contains(event.target) && !hamburger.contains(event.target)) {
-                    sidebarMenu.classList.remove("active");
-                }
-            });
-        });
-
-
-        // more-btn 버튼 클릭 시 alert 창 띄우기
-        document.addEventListener("DOMContentLoaded", function () {
-            const moreBtns = document.querySelectorAll(".more-btn");
-
-            moreBtns.forEach(btn => {
-                btn.addEventListener("click", function () {
-                    alert("이 사이트는 학습 목적으로 제작된 비상업적 카피사이트입니다.");
-                });
-            });
-        });
-
-        //scroll ~ top btn
-        document.addEventListener("DOMContentLoaded", function () {
-            const scrollTopBtn = document.getElementById("scrollTop");
-
-            window.addEventListener("scroll", function () {
-                if (window.scrollY > 200) {
-                    scrollTopBtn.classList.add("show");
-                } else {
-                    scrollTopBtn.classList.remove("show");
-                }
-            });
-
-            scrollTopBtn.addEventListener("click", function () {
-                window.scrollTo({
-                    top: 0,
-                    behavior: "smooth"
-                });
-            });
-        });
-
-        // 푸터 중 연관사이트 토글, + or - 버튼 상태 텍스트
-        document.addEventListener("DOMContentLoaded", function () {
-            const developerSites = document.getElementById("developerSites");
-            const dropdownMenu = document.getElementById("dropdownMenu");
-            const toggleIcon = document.getElementById("toggleIcon");
-
-            developerSites.addEventListener("click", function () {
-                this.classList.toggle("active");
-
-                if (this.classList.contains("active")) {
-                    toggleIcon.textContent = "-";
-                } else {
-                    toggleIcon.textContent = "+";
-                }
-            });
-
-            // 메뉴 외부 클릭 시 닫기
-            document.addEventListener("click", function (event) {
-                if (!developerSites.contains(event.target)) {
-                    developerSites.classList.remove("active");
-                    toggleIcon.textContent = "+";
-                }
-            });
-        });
+        //git 경로유지
+        if (window.location.hostname.includes("github.io")) {
+            document.write('<base href="/pleos25/">');
+        }
     </script>
 </body>
 

@@ -9,7 +9,7 @@
 body {
     font-family: 'HyundaiSans-Text-Pro-Bold', sans-serif;
     background-color: white;
-    color: #fff;
+    color: #FFFFFF;
     text-align: center;
 
 }
@@ -18,7 +18,6 @@ body {
 .header {
     position: fixed;
     top: 0;
-    left: 0;
     width: 100%;
     height: 60px;
     background: rgba(0, 0, 0, 0.9);
@@ -65,7 +64,6 @@ body {
     height: auto;
 }
 
-
 #navTitle {
     position: absolute;
     left: 50%;
@@ -75,7 +73,6 @@ body {
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
-
 
 .nav ul {
     list-style: none;
@@ -93,7 +90,6 @@ body {
 .nav ul li a:hover {
     color: #aaa;
 }
-
 
 .hamburger {
     display: none;
@@ -143,16 +139,13 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
-
 .sub-menu {
     padding-left: 30px;
 }
 
-
 .sidebar-menu.active {
     left: 0;
 }
-
 
 .scrolled .header {
     top: 0;
@@ -167,14 +160,13 @@ body {
     opacity: 1;
 }
 
-
 /* 푸터 */
 .footer-container {
     width: 80%;
     height: auto;
     min-height: 400px;
     margin-bottom: 30px;
-    background: url('../img/footerbg.png') center/cover no-repeat;
+    background: url('/img/footerbg.png') center/cover no-repeat;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -317,7 +309,6 @@ body {
     cursor: pointer;
 }
 
-
 .developer-sites.active .icon-plus {
     transform: rotate(180deg);
 }
@@ -346,99 +337,142 @@ body {
     margin-left: 50px;
 }
 
-.content-wrapper{
-  width: 100%;
-  height: auto;
-  background-color: #e7e7e7;
-
-}
-#exhibition{
-    width: 95%;
-    border-radius: 15px;
-    margin: 50px auto;
-}
-.exhibition-container {
+.schedule-container {
     width: 100%;
+    margin: auto;
     padding: 40px 0;
-    background:none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: #f5f5f5; 
 }
 
+.schedule-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.tab-btn {
+    background: #ddd;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.tab-btn.active {
+    background: black;
+    color: white;
+}
+
+.schedule-section {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.schedule-section h2 {
+   color: black
+}
+
+.sub-text {
+    font-size: 0.9rem;
+    color: #777;
+    opacity: 1;
+    margin-top: 10px;
+}
 .schedule-item {
     display: flex;
     align-items: stretch;
-    width: 90%;
-    max-width: 1100px;
-}
-
-.time-column {
-    background: black;
-    color: white;
-    padding: 40px;
-    width: 220px;
-    text-align: center;
-    border-radius: 16px 0 0 16px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-/* Exhibition 내용 전체 박스 (오른쪽) */
-.exhibition-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 15px;
-}
-
-.exhibition-item {
-    display: flex;
-    align-items: center;
     background: white;
     padding: 20px;
-    border-radius: 0 16px 16px 0;
+    border-radius: 12px;
+    align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    justify-content: start;
+    margin-top: 10px;
+    min-height: 120px;
+}
+
+.schedule-item h3{
+   color: black;
+   font-size: 1rem;
+}
+
+.time-box {
+    background: black;
+    color: white;
+    padding: 15px;
+    width: 80px;
+    align-self: stretch;
+    align-content: center;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+.track-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    width: 100%;
+    margin-top: 10px;
+}
+.amdetail-box {
+    background: white;
+    width: 40%;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.detail-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.exhibition-tag {
-    background-color: #2350ff;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 14px;
-    letter-spacing: -0.01em;
-    line-height: 1.47;
-    min-width: 100px;
-    padding: 6px 12px;
-    text-align: center;
-    flex-shrink: 0;
-}
-
-.item-title {
-    font-size: 17px;
-    color: black;
-    line-height: 1.6;
-    max-width: 555px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-grow: 1;
-    text-align: left;
-    padding-left: 15px;
-}
-
-.status {
-    font-size: 14px;
-    color: #c8c8c8;
+p.time-range {
+    font-size: 1rem;
+    color: #555;
     font-weight: bold;
-    flex-shrink: 0;
 }
 
+.label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    margin-bottom: 10px;
+}
 
+.keynote {
+    background-color: black;
+}
+
+.track-a {
+    background-color: #E50914;
+}
+
+p.speaker {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
 
 @media screen and (max-width: 1024px) {
     .hamburger {
@@ -494,7 +528,6 @@ body {
     .top-contents h2 {
         font-size: 2.2rem;
     }
-
 
     .programs-contents {
         height: auto;
@@ -580,33 +613,8 @@ body {
         margin: 0 5px;
         text-align: left;
     }
-
-    .schedule-item {
-        flex-direction: column;
+    .track-container {
+        grid-template-columns: repeat(1, 1fr);
     }
-
-    .time-column {
-        width: 100%;
-        border-radius: 16px 16px 0 0;
-        padding: 20px;
-    }
-
-    .exhibition-item {
-        border-radius: 0 0 16px 16px;
-        flex-direction: row;
-        align-items: center;
-        padding: 16px;
-    }
-
-    .item-title {
-        font-size: 16px;
-        max-width: 100%;
-        margin: 0;
-        text-align: left;
-    }
-
-    .status {
-        font-size: 13px;
-        text-align: right;
-    }
+   
 }
