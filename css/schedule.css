@@ -166,7 +166,8 @@ body {
     height: auto;
     min-height: 400px;
     margin-bottom: 30px;
-    background: url('img/footerbg.png') center/cover no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
     display: inline-flex;
     align-items: center;
     justify-content: center;
