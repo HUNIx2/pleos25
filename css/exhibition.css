@@ -396,6 +396,14 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
+.exhibition-item h3{
+    color: black;
+    font-size: 1rem;
+}
+.exhibition-item p{
+    color: black;
+    font-size: 0.8rem;
+}
 .exhibition-item:hover {
     transform: translateY(-5px);
 }
