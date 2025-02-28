@@ -357,13 +357,18 @@ body {
     border-radius: 15px;
     margin: 50px auto;
 }
-.exhibition-container {
+.hands-on-container {
     width: 100%;
     padding: 40px 0;
     background:none;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.hands-on-container h2{
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: 20px;
 }
 
 .schedule-item {
@@ -388,15 +393,14 @@ body {
     flex-shrink: 0;
 }
 
-/* Exhibition 내용 전체 박스 (오른쪽) */
-.exhibition-content {
+.hands-on-content {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 15px;
 }
 
-.exhibition-item {
+.hands-on-item {
     display: flex;
     align-items: center;
     background: white;
@@ -406,7 +410,7 @@ body {
     justify-content: space-between;
 }
 
-.exhibition-tag {
+.hands-on-tag {
     background-color: #2350ff;
     border-radius: 5px;
     color: #fff;
@@ -462,20 +466,6 @@ body {
         justify-content: center;
     }
 
-    .top-contents img {
-        width: 50%;
-        align-self: center;
-        justify-content: center;
-        
-    }
-
-    .top-contents p {
-        font-size: 0.9rem;
-        margin-top: 10px;
-        z-index: 50;
-        z-index: 9999;
-    }
-
     nav ul {
         flex-direction: column;
         gap: 10px;
@@ -509,54 +499,10 @@ body {
 
     }
 
-    .bottom-contents {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .box_map,
-    .box_info {
-        width: 90%;
-        max-width: 100%;
-        text-align: center;
-    }
-
     .icon_arrow {
         font-size: 16px;
     }
 
-    .info_item {
-        justify-content: center;/
-    }
-
-    .box_map h2 {
-        text-align: left;
-    }
-
-    .map_buttons {
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .map_buttons a {
-        width: 40%;
-        font-size: 15px;
-        padding: 10px 20px;
-    }
-    .info_item {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; 
-        justify-content: flex-start;
-        text-align: left;
-    }
-    .info_title, .info_desc {
-        font-size: 14px;
-        text-align: left;
-        padding-left: 20px;
-        display: block; 
-    }
     .developer-sites {
         width: 120px;
         padding: 10px;
@@ -591,7 +537,7 @@ body {
         padding: 20px;
     }
 
-    .exhibition-item {
+    .hands-on-item {
         border-radius: 0 0 16px 16px;
         flex-direction: row;
         align-items: center;

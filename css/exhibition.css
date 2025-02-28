@@ -371,14 +371,14 @@ body {
     align-items: center;
 }
 
-.exhibition-container {
+.exhibition-container h2{
     font-size: 1.2rem;
     color: black;
 }
 
 .exhibition-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3개씩 나열 */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     width: 90%;
     max-width: 1200px;

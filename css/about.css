@@ -465,11 +465,6 @@ body {
         padding: 15px;
     }
 
-    .row {
-        flex-direction: column;
-        gap: 20px;
-    }
-
     .content-wrapper {
         justify-content: center;
     }
@@ -527,12 +522,6 @@ body {
         text-align: center;
     }
 
-    .box_map,
-    .box_info {
-        width: 90%;
-        max-width: 100%;
-        text-align: center;
-    }
 
     .icon_arrow {
         font-size: 16px;
@@ -546,29 +535,6 @@ body {
         text-align: left;
     }
 
-    .map_buttons {
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .map_buttons a {
-        width: 40%;
-        font-size: 15px;
-        padding: 10px 20px;
-    }
-    .info_item {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; 
-        justify-content: flex-start;
-        text-align: left;
-    }
-    .info_title, .info_desc {
-        font-size: 14px;
-        text-align: left;
-        padding-left: 20px;
-        display: block; 
-    }
     .developer-sites {
         width: 120px;
         padding: 10px;
