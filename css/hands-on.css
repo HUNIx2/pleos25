@@ -335,7 +335,6 @@ body {
     align-items: center;
     width: 100%;
     height: 300px;
-    background-image: url("img/subbanner.png");
     background-size: cover;
     background-position: center;
 }
@@ -353,7 +352,7 @@ body {
   background-color: #e7e7e7;
 
 }
-#exhibition{
+#hands-on{
     width: 95%;
     border-radius: 15px;
     margin: 50px auto;
