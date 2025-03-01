@@ -6,12 +6,13 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: 'HyundaiSans-Text-Pro-Bold', sans-serif;
     background-color: white;
-    color: #FFFFFF;
+    color: #fff;
     text-align: center;
-
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* 네비게이션 바 */

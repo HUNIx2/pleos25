@@ -6,12 +6,13 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     font-family: 'HyundaiSans-Text-Pro-Bold', sans-serif;
     background-color: white;
     color: #fff;
     text-align: center;
-
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* 네비게이션 바 */
@@ -483,6 +484,11 @@ body {
     .exhibition-container h2 {
         font-size: 1.5rem;
         margin-bottom: 30px;
+    }
+
+    .exhibition-grid {
+        grid-template-columns: repeat(2, 1fr); 
+
     }
 
     .developer-sites {
