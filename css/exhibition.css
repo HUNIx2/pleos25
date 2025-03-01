@@ -401,6 +401,7 @@ html, body {
 .exhibition-item h3{
     color: black;
     font-size: 1rem;
+    margin-bottom: 8px;
 }
 .exhibition-item p{
     color: black;
